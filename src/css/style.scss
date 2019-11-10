@@ -1,0 +1,55 @@
+$primary-font: 'Poppins',
+sans-serif;
+// Colors
+$primary-bg: #212227;
+$white: #F1F1F3;
+$card-color: #292a33;
+
+
+html,
+body {
+    height: 100%;
+    background: $primary-bg;
+    font-family: $primary-font;
+    color: $white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1 0 auto;
+
+    .headline {
+        text-align: center;
+    }
+
+    .lead {
+        text-align: center;
+    }
+
+    .card {
+        background: $card-color;
+    }
+
+    .profile {
+        .bioUser {
+            font-size: 35px;
+        }
+    }
+}
+
+// Footer
+.footer {
+
+    $footer-color: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+    color: $footer-color;
+
+    a {
+        text-decoration: none;
+        color: $footer-color;
+    }
+}

@@ -1,0 +1,39 @@
+html,
+body {
+  height: 100%;
+  background: #212227;
+  font-family: "Poppins", sans-serif;
+  color: #F1F1F3;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+.container .headline {
+  text-align: center;
+}
+.container .lead {
+  text-align: center;
+}
+.container .card {
+  background: #292a33;
+}
+.container .profile .bioUser {
+  font-size: 35px;
+}
+
+.footer {
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.1);
+}
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */
