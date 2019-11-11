@@ -26,6 +26,9 @@ body {
 .container .profile .bioUser {
   font-size: 35px;
 }
+.container .profile .repoList {
+  background: #292a33;
+}
 
 .footer {
   flex-shrink: 0;

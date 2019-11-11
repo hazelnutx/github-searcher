@@ -27,13 +27,47 @@ class Interface {
                             <span class="badge">Followers: ${user.followers}</span>
                             <span class="badge">Following: ${user.following}</span>
                         </div>
-                        <ul>
-
+                        <ul id="repos">
+                            
                         </ul>
                     </div>
                 </div>
             </div>
         `;
+    }
+
+    showRepos(repos) {
+        let output = "";
+        repos.forEach(repo => {
+            output += `
+                <div class="list-group">
+                    <a href="${repo.html_url}" class="list-group-item repoList" target="_blank">
+                        <div class="d-flex w-300 justify-content-between">
+                            <h5>${repo.full_name}</h5>
+                            <small>${repo.language}</small>
+                        </div>
+                        <p class="mb-1">${repo.description}</p>
+                        <small>${repo.fork}</small>
+                    </a>
+                </div>
+            `;
+        });
+
+        document.getElementById("repos").innerHTML = output;
+    }
+
+    showAlert(msg) {
+        const div = document.createElement("div");
+        div.className = `alert alert-danger`;
+        div.appendChild(document.createTextNode(msg));
+        const container = document.querySelector(".container");
+        const search = document.querySelector(".search");
+
+        container.insertBefore(div, search);
+
+        setTimeout(() => {
+            document.querySelector(".alert").remove();
+        }, 1500);
     }
 
     clearProfile() {

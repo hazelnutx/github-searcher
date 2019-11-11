@@ -12,13 +12,13 @@ searchUser.addEventListener("keypress", e => {
         if (inputText !== "") {
             github.getUser(inputText).then(data => {
                 if (data.profile.message === "Not Found") {
-                    alert("User not found");
+                    ui.showAlert("User not found!");
                 } else {
                     ui.showProfile(data.profile);
+                    ui.showRepos(data.repos);
                 }
             });
         } else {
-            //TODO: Clear the input field
             // Clear input
             ui.clearProfile();
         }
