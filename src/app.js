@@ -20,6 +20,7 @@ searchUser.addEventListener("keypress", e => {
         } else {
             //TODO: Clear the input field
             // Clear input
+            ui.clearProfile();
         }
     }
 });

@@ -35,4 +35,8 @@ class Interface {
             </div>
         `;
     }
+
+    clearProfile() {
+        this.profile.innerHTML = "";
+    }
 }
