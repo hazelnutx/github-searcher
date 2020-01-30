@@ -1,8 +1,8 @@
 class Github {
     constructor() {
         // TODO: Make a NodeJS back-end, from where to fetch and hide the id's on Heroku
-        this.client_id = "7b0ca0ec7689a393bd40";
-        this.client_secret = "0375fe46e360e7ba84debc843864b53f65976f3b";
+        this.client_id = ""; // TODO: Add
+        this.client_secret = ""; // TODO: Add
         this.repos_count = 5;
         this.order = "asc";
         this.repos_sort = "updated";
